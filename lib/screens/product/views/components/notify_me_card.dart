@@ -52,6 +52,7 @@ class NotifyMeCard extends StatelessWidget {
                     ),
                     child: SvgPicture.asset(
                       "assets/icons/Notification.svg",
+                      // ignore: deprecated_member_use
                       color: Colors.white,
                     ),
                   ),

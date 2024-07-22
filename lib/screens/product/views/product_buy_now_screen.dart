@@ -6,8 +6,6 @@ import 'package:shopping_app/components/network_image_with_loader.dart';
 import 'package:shopping_app/screens/product/views/added_to_cart_message_screen.dart';
 import 'package:shopping_app/screens/product/views/components/product_list_tile.dart';
 import 'package:shopping_app/screens/product/views/location_permission_store_availability_screen.dart';
-import 'package:shopping_app/screens/product/views/size_guide_screen.dart';
-
 import '../../../constants.dart';
 import 'components/product_quantity.dart';
 import 'components/selected_colors.dart';
@@ -18,6 +16,7 @@ class ProductBuyNowScreen extends StatefulWidget {
   const ProductBuyNowScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ProductBuyNowScreenState createState() => _ProductBuyNowScreenState();
 }
 
@@ -53,6 +52,7 @@ class _ProductBuyNowScreenState extends State<ProductBuyNowScreen> {
                 IconButton(
                   onPressed: () {},
                   icon: SvgPicture.asset("assets/icons/Bookmark.svg",
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).textTheme.bodyLarge!.color),
                 ),
               ],
@@ -118,13 +118,7 @@ class _ProductBuyNowScreenState extends State<ProductBuyNowScreen> {
                     title: "Size guide",
                     svgSrc: "assets/icons/Sizeguid.svg",
                     isShowBottomBorder: true,
-                    press: () {
-                      customModalBottomSheet(
-                        context,
-                        height: MediaQuery.of(context).size.height * 0.9,
-                        child: const SizeGuideScreen(),
-                      );
-                    },
+                    press: () {},
                   ),
                 ),
                 SliverPadding(

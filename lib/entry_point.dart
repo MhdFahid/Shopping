@@ -16,8 +16,8 @@ class _EntryPointState extends State<EntryPoint> {
     HomeScreen(),
     DiscoverScreen(),
     BookmarkScreen(),
-    CartScreen(),
     ProfileScreen(),
+    Text('data')
   ];
   int _currentIndex = 0;
 
@@ -37,9 +37,6 @@ class _EntryPointState extends State<EntryPoint> {
 
     return Scaffold(
       appBar: AppBar(
-        // pinned: true,
-        // floating: true,
-        // snap: true,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         leading: const SizedBox(),
         leadingWidth: 0,
@@ -78,7 +75,7 @@ class _EntryPointState extends State<EntryPoint> {
           ),
         ],
       ),
-      // body: _pages[_currentIndex],
+      // // body: _pages[_currentIndex],
       body: PageTransitionSwitcher(
         duration: defaultDuration,
         transitionBuilder: (child, animation, secondAnimation) {

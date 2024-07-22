@@ -69,6 +69,7 @@ class ProfileCard extends StatelessWidget {
       trailing: isShowArrow
           ? SvgPicture.asset(
               "assets/icons/miniRight.svg",
+              // ignore: deprecated_member_use
               color: Theme.of(context).iconTheme.color!.withOpacity(0.4),
             )
           : null,

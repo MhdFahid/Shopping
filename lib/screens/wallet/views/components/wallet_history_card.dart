@@ -32,6 +32,7 @@ class WalletHistoryCard extends StatelessWidget {
             minLeadingWidth: 24,
             leading: SvgPicture.asset(
               isReturn ? "assets/icons/Return.svg" : "assets/icons/Product.svg",
+              // ignore: deprecated_member_use
               color: Theme.of(context).iconTheme.color,
               height: 24,
               width: 24,

@@ -51,6 +51,7 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
                             child: SvgPicture.asset(
                               "assets/icons/Search.svg",
                               height: 24,
+                              // ignore: deprecated_member_use
                               color: Theme.of(context)
                                   .inputDecorationTheme
                                   .hintStyle!

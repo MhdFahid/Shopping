@@ -47,6 +47,7 @@ class SearchForm extends StatelessWidget {
             child: SvgPicture.asset(
               "assets/icons/Search.svg",
               height: 24,
+              // ignore: deprecated_member_use
               color: Theme.of(context).iconTheme.color!.withOpacity(0.3),
             ),
           ),
@@ -64,6 +65,7 @@ class SearchForm extends StatelessWidget {
                     icon: SvgPicture.asset(
                       "assets/icons/Filter.svg",
                       height: 24,
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).iconTheme.color,
                     ),
                   ),
